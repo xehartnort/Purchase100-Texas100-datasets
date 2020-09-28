@@ -4,7 +4,7 @@ A repo to preprocess the Purchase100 dataset extracted from Kaggle: Acquire Valu
 
 ## Download preprocessed dataset
 
- - [purchase100.npz](https://github.com/xehartnort/Purchase100-dataset/releases/download/v1.0/purchase100.npz)
+ - [purchase100.npz](https://github.com/xehartnort/Purchase100-dataset/releases/download/v1.1/purchase100.npz)
 
 The authenticity of the downloaded files can be checked with the following md5 hashes
 
