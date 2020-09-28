@@ -1,0 +1,2 @@
+numpy==1.19.1
+scikit_learn==0.23.2

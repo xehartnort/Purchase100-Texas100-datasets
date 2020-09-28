@@ -21,7 +21,13 @@ A repo to preprocess the Purchase100 dataset extracted from Kaggle: Acquire Valu
     features = np.load('./purchase_100_features.npy')
     labels = np.load('./purchase_100_labels.npy')
  ```
-    
+
+## Requirements
+
+This work is tested with Python 3.8.5.
+
+The requirements.txt file is automatically generated with [pipreqs](https://github.com/bndr/pipreqs).
+
 ## References
 
 The code in this repo is based on the preprocessing scripts given in https://github.com/bargavj/EvaluatingDPML
