@@ -7,6 +7,11 @@ A repo to preprocess the Purchase100 dataset extracted from Kaggle: Acquire Valu
  - [purchase100_features.npy.zip](https://github.com/xehartnort/Purchase100-dataset/blob/master/purchase100_features.npy.zip?raw=true)
  - [purchase100_labels.npy.zip](https://github.com/xehartnort/Purchase100-dataset/blob/master/purchase100_labels.npy.zip?raw=true)
 
+The authenticity of the downloaded files can be checked with the following md5 hashes
+
+ - purchase100_features.npy.zip : `b0c8c072d80959dfc161f2928aac1c00`
+ - purchase100_labels.npy.zip : `7b7409c4897f86889dd08a916dd9a111`
+
 ## Steps to preprocess the dataset
 
  1. Download the `transactions.csv.gz` file from https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data
