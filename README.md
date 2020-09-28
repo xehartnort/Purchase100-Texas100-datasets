@@ -4,8 +4,8 @@ A repo to preprocess the Purchase100 dataset extracted from Kaggle: Acquire Valu
 
 ## Download preprocessed dataset
 
- - [purchase100_features.npy.zip](https://github.com/xehartnort/Purchase100-dataset/blob/master/purchase100_features.npy.zip?raw=true)
- - [purchase100_labels.npy.zip](https://github.com/xehartnort/Purchase100-dataset/blob/master/purchase100_labels.npy.zip?raw=true)
+ - [purchase100_features.npy.zip](https://github.com/xehartnort/Purchase100-dataset/releases/download/v1.0/purchase100_features.npy.zip)
+ - [purchase100_labels.npy.zip](https://github.com/xehartnort/Purchase100-dataset/releases/download/v1.0/purchase100_labels.npy.zip)
 
 The authenticity of the downloaded files can be checked with the following md5 hashes
 
