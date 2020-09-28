@@ -50,9 +50,9 @@ def populate_and_make_dataset(dataset_path):
     dataset = np.array(dataset)
     dataset = normalizeDataset(dataset)
 
-    np.save('purchase_100_features.npy', dataset)
+    np.save('purchase100_features.npy', dataset)
     X = KMeans(n_clusters=100, random_state=0).fit(dataset)
-    np.save('purchase_100_labels.npy', X.labels_)
+    np.save('purchase100_labels.npy', X.labels_)
     
 if __name__ == "__main__":
     if len(sys.argv) < 2:
