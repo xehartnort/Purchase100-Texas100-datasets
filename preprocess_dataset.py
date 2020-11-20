@@ -5,7 +5,12 @@ from sklearn.cluster import KMeans
 import gzip
 import sys
 
-IT_NUM = 100
+# Number of features, that each data point will have
+NUM_ITEM = 600
+# Approximate total number of elements to gather
+NUM_ELEM = 200000
+# Number of labels to classify
+NUM_LABELS = 100
 
 def normalizeDataset(X):
     mods = np.linalg.norm(X, axis=1)
@@ -24,14 +29,14 @@ def populate_and_make_dataset(dataset_path):
             lin = str(line).split(',')
             cust = lin[0]
             it = lin[3]
-            if it not in items and it_cnt < IT_NUM:
+            if it not in items and it_cnt < NUM_ITEM:
                 items[it] = it_cnt
                 it_cnt += 1
             if cust not in customer:
-                customer[cust] = [0]*IT_NUM
+                customer[cust] = [0]*NUM_ITEM
                 cust_cnt += 1
                 last_cust = cust
-            if cust_cnt > 250000:
+            if cust_cnt > NUM_ELEM:
                 break
             if it in items:
                 customer[cust][items[it]] = 1
@@ -50,8 +55,8 @@ def populate_and_make_dataset(dataset_path):
     dataset = np.array(dataset)
     dataset = normalizeDataset(dataset)
 
-    X = KMeans(n_clusters=100, random_state=0).fit(dataset)
-    np.savez_compressed('purchase100', features=dataset, labels=X.labels_)
+    X = KMeans(n_clusters=NUM_LABELS, random_state=0).fit(dataset)
+    np.savez_compressed('purchase{}'.format(NUM_LABELS), features=dataset, labels=X.labels_)
     
 if __name__ == "__main__":
     if len(sys.argv) < 2:
