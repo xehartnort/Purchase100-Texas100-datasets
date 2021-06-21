@@ -12,7 +12,7 @@ This repository preprocess the datasets downloaded from: [https://github.com/pri
     labels = data['labels']
  ```
 
-Note that labels are one hot encododed.
+Note that labels are one hot encoded.
 
 ## Requirements
 

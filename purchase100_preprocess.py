@@ -17,6 +17,4 @@ if __name__ == "__main__":
     data = np.array(features)
     labels = to_categorical(labels)
 
-    data = np.array(features)
-    labels = to_categorical(labels)
     np.savez_compressed('purchase100', features=data, labels=labels)
