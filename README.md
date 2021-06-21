@@ -1,19 +1,6 @@
-# Purchase100 dataset
+# Purchase100 and Texas100 dataset
 
-A repo to preprocess the Purchase100 dataset extracted from Kaggle: Acquire Valued Shoppers Challenge
-
-## Download preprocessed dataset
-
- - [purchase100.npz](https://github.com/xehartnort/Purchase100-dataset/releases/download/v2.0/purchase100.npz)
-
-The authenticity of the downloaded files can be checked with the following md5 hashes
-
- - purchase100.npz : `946b120059b694bb2b60004aeedd5581`
-
-## Steps to preprocess the dataset
-
- 1. Download the `transactions.csv.gz` file from https://www.kaggle.com/c/acquire-valued-shoppers-challenge/data
- 2. Run `preprocess_dataset.py <path_to_transactions.csv.gz>` to generate `purchase100.npz`
+This repository preprocess the datasets downloaded from: [https://github.com/privacytrustlab/datasets](https://github.com/privacytrustlab/datasets)
 
 ## How to use it
 
@@ -25,12 +12,10 @@ The authenticity of the downloaded files can be checked with the following md5 h
     labels = data['labels']
  ```
 
+Note that labels are one hot encododed.
+
 ## Requirements
 
 This work is tested with Python 3.8.5.
 
 The requirements.txt file is automatically generated with [pipreqs](https://github.com/bndr/pipreqs).
-
-## References
-
-The code in this repo is based on the preprocessing scripts given in https://github.com/bargavj/EvaluatingDPML
